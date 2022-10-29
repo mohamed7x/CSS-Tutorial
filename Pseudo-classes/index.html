@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+div.hover {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+div.hover:hover {
+  background-color: blue;
+}
+p.hover-over{
+   display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+div.hover-over:hover p {
+  display: block;
+}
+/*
+p:first-child {
+  color: blue;
+}
+
+p i:first-child {
+  color: blue;
+}
+*/
+p:first-child i {
+  color: blue;
+}
+
+</style>
+
+</head>
+<body>
+  
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+  
+  <h1>
+What are Pseudo-classes?
+  </h1>
+  <p>
+
+A pseudo-class is used to define a special state of an element.
+    
+  </p>
+  
+  <p>
+For example, it can be used to:
+  </p>
+  <ul>
+    <li>
+Style an element when a user mouses over it
+    </li>
+    <li>
+Style visited and unvisited links differently
+    </li>
+    <li>
+Style an element when it gets focus
+    </li>
+  </ul>
+<h3>
+Syntax
+</h3>
+The syntax of pseudo-classes:
+<p>
+selector:pseudo-class {
+  property: value;
+}
+</p>
+<h2>
+Anchor Pseudo-classes
+</h2>
+<p>
+Links can be displayed in different ways:
+</p>
+
+/* unvisited link */
+a:link 
+/* visited link */
+a:visited
+/* mouse over link */
+a:hover 
+/* selected link */
+a:active 
+
+<p>
+<strong>
+Note:
+</strong>
+a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+</p>
+
+
+  
+<h2>Styling a link depending on state</h2>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<h2>
+Pseudo-classes and HTML Classes
+</h2>
+<p>When you hover over the first link below, it will change color and font size:</p>
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+<p><a href="default.asp">CSS Tutorial</a></p>
+<h2>
+Hover on div
+</h2>
+
+<div class="hover">Mouse Over Me</div>
+
+<h2>
+Simple Tooltip Hover
+</h2>
+<p>
+Hover over a < div > element to show a < p > element (like a tooltip):
+</p>
+<div class="hover-over">Hover over this div element to show the p element
+  <p class="hover-over">Tada! Here I am!</p>
+</div>
+<h2>
+The :first-child Pseudo-class
+</h2>
+<p>
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+</ p >
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
+
+<h2>
+Match the first < i > element in all < p > elements
+</h2>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<h2>
+Match all <i> elements in all first child <p> elements
+</h2>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<div>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

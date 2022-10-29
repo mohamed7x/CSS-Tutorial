@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>
+CSS Border Sides
+</h1>
+
+<h2>
+CSS Border - Individual Sides
+</h2>
+
+<p>
+From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.<br>
+
+In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+</pre>
+&nbsp;
+</div>
+
+<p>Result:</p>
+
+<div>
+<style>
+p.one {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+</style>
+<h2>Individual Border Sides</h2>
+<p class="one">Different Border Styles</p>
+</div>
+
+
+
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+
+<p>The example above gives the same result as this:</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  border-style: dotted solid;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<p>
+So, here is how it works:<br><br>
+
+If the <span style="color: red;">border-style</span> property has four values:
+<br><br>
+<b>border-style: dotted solid double dashed;</b>
+<ul>
+  <li>top border is dotted</li>
+ <li>right border is solid</li>
+ <li>bottom border is double</li>
+ <li>left border is dashed</li>
+</ul>
+
+
+If the <span style="color: red;">border-style</span> property has three values:
+<br><br>
+<b>border-style: dotted solid double;</b>
+<ul>
+  <li>top border is dotted</li>
+<li>right and left borders are solid</li>
+<li>bottom border is double</li>
+</ul>
+
+If the <span style="color: red;">border-style</span> property has two values:
+<br><br>
+
+<b>border-style: dotted solid;</b>
+<ul>
+<li>top and bottom borders are dotted</li>
+<li>right and left borders are solid</li>
+</ul>
+If the <span style="color: red;">border-style</span> property has one value:
+<br><br>
+<b>border-style: dotted;</b>
+<ul>
+  <li>all four borders are dotted</li>
+</ul>
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+/* Four values */
+p {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p {
+  border-style: dotted solid;
+}
+
+/* One value */
+p {
+  border-style: dotted;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example3.html">Click Here</a>
+
+<p style="background-color: #ffffcc;">
+The <span style="color: red;">border-style</span> property is used in the example above. However, it also works with <span style="color: red;">border-width</span> and <span style="color: red;">border-color</span>.
+</p>
+
+</body>
+</html>

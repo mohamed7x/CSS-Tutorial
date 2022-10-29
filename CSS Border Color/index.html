@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <h1>
+CSS Border Color
+  </h1>
+<h2>
+CSS Border Color
+</h2>
+<p>
+The <span style="color: red;">border-color</span> property is used to set the color of the four borders.<br><br>
+
+The color can be set by:
+<ul>
+  <li>name - specify a color name, like "red"</li>
+  <li>HEX - specify a HEX value, like "#ff0000"</li>
+  <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+<li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+  <li>transparent</li>
+</ul>
+
+<b>Note</b>: If <span style="color: red;">border-color</span> is not set, it inherits the color of the element.
+</p>
+
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Demonstration of the different border colors:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+}
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+}
+</pre>
+&nbsp;
+</div>
+<p>Result:</p>
+<div>
+<style>
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+p.two {
+  border-style: solid;
+  border-color: green;
+} 
+p.three {
+  border-style: dotted;
+  border-color: blue;
+} 
+</style>
+
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A dotted blue border</p>
+  
+</div>
+
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+<h2>Specific Side Colors</h2>
+<p>
+The <span style="color: red;">border-color</span> property can have from one to four values (for the top border, right border, bottom border, and the left border). </p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<h2>HEX Values</h2>
+<p>
+The color of the border can also be specified using a hexadecimal value (HEX):
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.one {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+</pre>
+&nbsp;
+</div>
+
+
+<h2>RGB Values</h2>
+<p>
+Or by using RGB values:
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.one {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+</pre>
+&nbsp;
+</div>
+ href="Example1.html">Click Here</a>
+
+<h2>HSL Values</h2>
+<p>
+You can also use HSL values:</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.one {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */
+}
+</pre>
+&nbsp;
+</div>
+
+
+</body>
+</html>

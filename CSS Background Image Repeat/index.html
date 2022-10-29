@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>CSS Background Image Repeat</h1>
+
+<h2>CSS background-repeat</h2>
+<p>
+By default, the <span style="color: red">background-image</span> property repeats an image both horizontally and vertically.<br><br>
+
+Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+body {
+  background-image: url("gradient_bg.png");
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+<p>
+If the image above is repeated only horizontally (<span style="color: red">background-repeat: repeat-x;</span>), the background will look better:
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<p style="background-color: #ffffcc;">
+<b>Tip</b>: To repeat an image vertically, set <span style="color: red">background-repeat: repeat-x;</span>
+</p>
+<h2>CSS background-repeat: no-repeat</h2>
+<p>
+Showing the background image only once is also specified by the <span style="color:red;">background-repeat</span> property:
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Show the background image only once:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example3.html">Click Here</a>
+<p>
+In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.
+</p>
+<h2>CSS background-position</h2>
+
+<p>
+The <span style="color: red">background-position</span> property is used to specify the position of the background image.
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Position the background image in the top-right corner: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example4.html">Click Here</a>
+
+<h2>The CSS Background Repeat and Position Properties</h2>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_background-position.asp">background-position</a></td>
+    <td>Sets the starting position of a background image</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_background-repeat.asp">background-repeat</a></td>
+    <td>Sets how a background image will be repeated</td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>

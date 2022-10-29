@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>CSS Margin Collapse</h1>
+<p>Sometimes two margins collapse into a single margin.</p>
+<h2>Margin Collapse</h2>
+<p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.<br><br>
+
+This does not happen on left and right margins! Only top and bottom margins!
+<br><br>
+Look at the following example:</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Demonstration of margin collapse:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+<p>In the example above, the &lt;h1&gt; element has a bottom margin of 50px and the &lt;h2&gt; element has a top margin set to 20px. <br><br>
+
+Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h2>All CSS Margin Properties</h2>
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin.asp">margin</a></td>
+    <td>A shorthand property for setting all the margin properties in one declaration</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-bottom.asp">margin-bottom</a></td>
+    <td>Sets the bottom margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-left.asp">margin-left</a></td>
+    <td>Sets the left margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-right.asp">margin-right</a></td>
+    <td>Sets the right margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-top.asp">margin-top</a></td>
+    <td>Sets the top margin of an element</td>
+  </tr>
+</table>
+
+
+</body>
+</html>

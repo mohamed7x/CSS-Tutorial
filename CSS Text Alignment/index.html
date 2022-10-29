@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>CSS Text Alignment</h1>
+
+<h2>Text Alignment and Text Direction</h2>
+<p>
+
+In this chapter you will learn about the following properties:
+
+<ul>
+  <li><span style="color:red;">text-align</span> </li>
+  <li><span style="color:red;">text-align-last</span> </li>
+  <li><span style="color:red;">direction</span> </li>
+  <li><span style="color:red;">unicode-bidi</span> </li>
+  <li><span style="color:red;">vertical-align</span></li>
+</ul>
+</p>
+
+<h2>Text Alignment</h2>
+<p>
+The <span style="color:red;">text-align</span> property is used to set the horizontal alignment of a text.<br><br>
+
+A text can be left or right aligned, centered, or justified.<br><br>
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+<p>
+When the <span style="color:red;">text-align</span> property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  text-align: justify;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+<h2>Text Align Last</h2>
+<p>
+The <span style="color:red;">text-align-last</span> property specifies how to align the last line of a text.</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Align the last line of text in three <p> elements:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example3.html">Click Here</a>
+
+
+<h2>Text Direction</h2>
+<p>
+The <span style="color:red;">direction</span> and <span style="color:red;">unicode-bidi</span> properties can be used to change the text direction of an element:
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example4.html">Click Here</a>
+
+
+<h2>Vertical Alignment</h2>
+<p>
+
+The <span style="color:red;">vertical-align</span> property sets the vertical alignment of an element.
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Set the vertical alignment of an image in a text:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example5.html">Click Here</a>
+<h2>
+The CSS Text Alignment/Direction Properties
+</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_text_direction.asp">direction</a></td>
+    <td>Specifies the text direction/writing direction</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp">text-align</a></td>
+    <td>Specifies the horizontal alignment of text</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/css3_pr_text-align-last.asp">text-align-last</a></td>
+    <td>Specifies how to align the last line of a text</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_text_unicode-bidi.asp">unicode-bidi</a></td>
+    <td>Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_pos_vertical-align.asp">vertical-align</a></td>
+    <td>Sets the vertical alignment of an element</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+

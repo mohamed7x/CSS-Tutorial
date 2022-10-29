@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+
+<h1>How To Add CSS</h1>
+<p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+<h2>Three Ways to Insert CSS</h2>
+<p>
+There are three ways of inserting a style sheet:
+<ul>
+  <li>External CSS</li>
+  <li>Internal CSS</li>
+  <li>Inline CSS</li>
+</ul>
+</p>
+
+<h3>External CSS</h3>
+<p>With an external style sheet, you can change the look of an entire website by changing just one file!<br><br>
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+&nbsp;
+</div>
+
+<a target="_blanck" href="Example1.html">Output: Click Here</a>
+
+<p>
+An external style sheet can be written in any text editor, and must be saved with a .css extension.<br><br>
+
+The external .css file should not contain any HTML tags.<br><br>
+
+Here is how the "mystyle.css" file looks:
+</p>
+
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>"mystyle.css"</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+</pre>
+&nbsp;
+</div>
+
+<p style="background-color: #FF8674;">
+<b>Note</b>: Do not add a space between the property value and the unit:<br>
+Incorrect (space): <span style="color: red;">margin-left: 20 px;</span><br>
+Correct (nospace): <span style="color: red;">margin-left: 20px;</span> 
+</p>
+
+<h3>Internal CSS</h3>
+<p>
+An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the &lt;style&gt; element, inside the head section.
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+  <h3>Example</h3>
+  <p>
+Internal styles are defined within
+the &lt;style&gt; element, inside the
+&lt;head&gt; section of an HTML page:
+  </p>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+&nbsp;
+</div>
+<a target="_blanck" href="Example2.html">Output: Click Here</a>
+
+<h3>Inline CSS</h3>
+<p>
+An inline style may be used to apply a unique style for a single element.<br><br>
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+  <h3>Example</h3>
+  <p>
+Inline styles are defined within the "style" attribute of the relevant element:
+  </p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 style="color:blue; text-align:center;"&gt;
+This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;
+This is a paragraph. &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+&nbsp;
+</div>
+<a target="_blanck" href="Example3.html">Output: Click Here</a>
+&nbsp;
+<p style="background-color: #ffffcc;">
+<b>Tip</b>: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+</p>
+
+<h2>Multiple Style Sheets</h2>
+<p>
+If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<p>Assume that an external style sheet has the following style for the &lt;h1&gt; element:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+h1 {
+  color: navy;
+}
+</pre>
+&nbsp;
+</div>
+&nbsp;
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<p>Then, assume that an internal style sheet also has the following style for the &lt;h1&gt; element:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+h1 {
+  color: orange;   
+}
+</pre>
+&nbsp;
+</div>
+
+&nbsp;
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+  <h3>Example</h3>
+  <p>
+If the internal style is defined <b>after</b> the link to the external style sheet, the &lt;h1&gt; elements will be "orange":
+  </p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+&lt;head&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;style&gt;
+h1 {
+  color: orange;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+</pre>
+&nbsp;
+</div>
+&nbsp;<br>
+<a target="_blanck" href="Example4.html">Output: Click Here</a>
+&nbsp;<br>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+  <h3>Example</h3>
+  <p>
+However, if the internal style is defined <b>before</b> the link to the external style sheet, the &lt;h1&gt; elements will be "navy": 
+  </p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+  color: orange;
+}
+&lt;/style&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+
+&lt;/head&gt;
+</pre>
+&nbsp;
+</div>
+&nbsp;<br>
+<a target="_blanck" href="Example5.html">Output: Click Here</a>
+&nbsp;<br>
+
+<h2>Cascading Order</h2>
+<p>
+What style will be used when there is more than one style specified for an HTML element?<br><br>
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+<ol>
+  <li>Inline style (inside an HTML element)</li>
+  <li>External and internal style sheets (in the head section)</li>
+  <li>Browser default</li>
+  
+</ol>
+
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+</p>
+
+&nbsp;<br>
+<a target="_blanck" href="Example6.html">Try it Yourself »</a>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+
+
+</body>
+</html>

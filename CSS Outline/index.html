@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>CSS Outline</h1>
+<p>
+An outline is a line drawn outside the element's border.
+</p>
+<hr>
+<style>
+p.demo {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+</style>
+<p class="demo">This element has a 2px black border and a green outline with a width of 10px.</p>
+<hr>
+
+<h2>CSS Outline</h2>
+<p>
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+</p>
+<img src="outline.jpg" height=350px; width= 350px;>
+<p>
+CSS has the following outline properties:
+<ul>
+  <li>outline-style</li>
+  <li>outline-color</li>
+  <li>outline-width</li>
+  <li>outline-offset</li>
+  <li>outline</li>
+</ul>
+</p>
+<p style="background-color: #ffffcc;">
+<b>Note</b>: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+</p>
+<h2>CSS Outline Style</h2>
+<p>
+The outline-style property specifies the style of the outline, and can have one of the following values:
+
+<ul>
+  <li>dotted - Defines a dotted outline</li>
+<li>dashed - Defines a dashed outline</li>
+<li>solid - Defines a solid outline</li>
+<li>double - Defines a double outline</li>
+<li>groove - Defines a 3D grooved outline</li>
+<li>ridge - Defines a 3D ridged outline</li>
+<li>inset - Defines a 3D inset outline</li>
+<li>outset - Defines a 3D outset outline</li>
+<li>none - Defines no outline</li>
+<li>hidden - Defines a hidden outline</li>
+</ul>
+
+The following example shows the different outline-style values:
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Demonstration of the different outline styles:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+</pre>
+&nbsp;
+</div>
+<h3>Result:</h3>
+
+<div>
+<style>
+p {outline-color:red;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+</style>
+
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+</div>
+
+<a target="_blanck" href="Example1.html">Output: Click Here</a>
+
+<p style="background-color: #ffffcc;">
+<b>Note</b>: None of the other outline properties (which you will learn more about in the next chapters) will have ANY effect unless the outline-style property is set!
+</p>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>CSS Margins</h1>
+<p>Margins are used to create space around elements, outside of any defined borders.</p>
+
+<div class="contiener">
+<style>
+.contiener {
+  border: solid 1px;
+}
+.one {
+  margin: 70px;
+  border: 1px solid #4CAF50;
+}
+</style>
+
+<div class="one">This element has a margin of 70px.</div>
+</div>
+
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+<h2>CSS Margins</h2>
+<p>
+The CSS <span style="color:red;">margin</span> properties are used to create space around elements, outside of any defined borders. <br><br>
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+</p>
+
+<h2>Margin - Individual Sides</h2>
+<p>
+CSS has properties for specifying the margin for each side of an element:
+
+<ul>
+  <li><span style="color:red;">margin-top</span> </li>
+<li><span style="color:red;">margin-right</span></li>
+<li><span style="color:red;">margin-bottom</span></li>
+<li><span style="color:red;">margin-left</span> </li>
+</ul>
+
+All the margin properties can have the following values: 
+
+<ul>
+<li>auto - the browser calculates the margin</li>
+<li>length - specifies a margin in px, pt, cm, etc.</li>
+<li>% - specifies a margin in % of the width of the containing element</li>
+<li>inherit - specifies that the margin should be inherited from the parent element</li>
+</ul>
+
+<b>Tip</b>: Negative values are allowed.
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Set different margins for all four sides of a &lt;p&gt; element:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+
+
+<h2>Margin - Shorthand Property</h2>
+<p>
+To shorten the code, it is possible to specify all the margin properties in one property.<br><br>
+
+The <span style="color:red;">margin</span> property is a shorthand property for the following individual margin properties:
+
+<ul>
+  <li><span style="color:red;">margin-top</span> </li>
+<li><span style="color:red;">margin-right</span></li>
+<li><span style="color:red;">margin-bottom</span></li>
+<li><span style="color:red;">margin-left</span> </li>
+</ul>
+
+
+So, here is how it works:<br><br>
+
+
+
+
+
+
+
+<h2>four values:</h2>
+If the <span style="color:red;">margin</span> property has four values:
+<ul>
+  <li>
+<b>margin: 25px 50px 75px 100px;</b>
+  </li>
+  <ul>
+    <li>top margin is 25px</li>
+    <li>right margin is 50px</li>
+    <li>bottom margin is 75px</li>
+    <li>left margin is 100px</li>
+  </ul>
+</ul>
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Use the margin shorthand property with four values:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  margin: 25px 50px 75px 100px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example3.html">Click Here</a>
+
+
+
+
+
+
+<h2>three values:</h2>
+<p>
+If the <span style="color:red;">margin</span> property has three values:
+
+<ul>
+  <li>
+<b>margin: 25px 50px 75px;</b>
+  </li>
+  <ul>
+   <li>top margin is 25px</li>
+   <li>right and left margins are 50px</li>
+   <li>bottom margin is 75px</li>
+  </ul>
+</ul>
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Use the margin shorthand property with three values: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  margin: 25px 50px 75px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example4.html">Click Here</a>
+
+
+
+
+
+<h2>two values:</h2>
+<p>
+If the <span style="color:red;">margin</span> property has two values:
+<ul>
+  <li>
+<b>margin: 25px 50px;</b>
+  </li>
+  <ul>
+   <li>top and bottom margins are 25px</li>
+   <li>right and left margins are 50px</li>
+  </ul>
+</ul>
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Use the margin shorthand property with two values: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  margin: 25px 50px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example5.html">Click Here</a>
+
+
+
+
+
+<h2>one value:</h2>
+<p>
+If the margin property has one value:
+<ul>
+  <li>
+<b>margin: 25px;</b>
+  </li>
+  <ul>
+   <li>all four margins are 25px</li>
+  </ul>
+</ul>
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Use the margin shorthand property with one value: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  margin: 25px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example6.html">Click Here</a>
+
+
+
+
+
+
+
+<h2>The auto Value</h2>
+<p>
+You can set the margin property to <span style="color:red;">auto</span> to horizontally center the element within its container.<br><br>
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Use margin: auto:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example7.html">Click Here</a>
+
+
+<h2>The inherit Value</h2>
+<p>
+This example lets the left margin of the &lt;p class="ex1"&gt; element be inherited from the parent element (&lt;div&gt;):
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Use of the inherit value:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+p.ex1 {
+  margin-left: inherit;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example8.html">Click Here</a>
+
+<h2>All CSS Margin Properties</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin.asp">margin</a></td>
+    <td>A shorthand property for setting all the margin properties in one declaration</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-bottom.asp">margin-bottom</a></td>
+    <td>Sets the bottom margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-left.asp">margin-left</a></td>
+    <td>Sets the left margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-right.asp">margin-right</a></td>
+    <td>Sets the right margin of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_margin-top.asp">margin-top</a></td>
+    <td>Sets the top margin of an element</td>
+  </tr>
+</table>
+
+</body>
+</html>

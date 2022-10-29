@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>CSS Text</h1>
+
+<p>
+CSS has a lot of properties for formatting text.
+</p>
+
+<div>
+<style>
+div.demo {
+  border: 1px solid gray;
+  padding: 8px;
+}
+h1.demo {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+p.demo {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+a.demo {
+  text-decoration: none;
+  color: #008CBA;
+}
+</style>
+<div class="demo"> 
+ <h1 class="demo">text formatting</h1>
+  <p class="demo">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  <a class="demo" target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+</div>
+</div>
+
+<h2>Text Color</h2>
+<p>
+The <span style="color:red;">color</span>  property is used to set the color of the text. The color is specified by:
+<ul>
+  <li>a color name - like "red"</li>
+  <li>a HEX value - like "#ff0000"</li>
+  <li>an RGB value - like "rgb(255,0,0)"</li>
+</ul>
+
+Look at <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">CSS Color Values</a> for a complete list of possible color values.<br><br>
+
+The default text color for a page is defined in the body selector.
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+body {
+  color: blue;
+}
+h1 {
+  color: green;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+
+<h2>Text Color and Background Color</h2>
+<p>
+In this example, we define both the <span style="color:red;">background-color</span>  property and the <span style="color:red;">color</span>   property:
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<p style="background-color: #ffffcc;">
+<b>Important</b>: High contrast is very important for people with vision problems. So, always ensure that the contrast between the text color and the background color (or background image) is good!
+</p>
+<h2>The CSS Text Color Property</h2>
+
+
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_text_color.asp">color</a></td>
+    <td>Specifies the color of text</td>
+  </tr>
+</table>
+
+
+</body>
+</html>

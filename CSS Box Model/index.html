@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>CSS Box Model</h1>
+<p>All HTML elements can be considered as boxes.</p>
+<hr>
+
+<h2>The CSS Box Model</h2>
+<p>
+In CSS, the term "box model" is used when talking about design and layout.<br><br>
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+
+<img src="box-model.jpg" width="350px" heigth="350px">
+<p>
+Explanation of the different parts:
+<ul>
+  <li><b>Content</b> - The content of the box, where text and images appear</li>
+  <li><b>Padding</b> - Clears an area around the content. The padding is transparent</li>
+  <li><b>Border</b> - A border that goes around the padding and content</li>
+  <li><b>Margin</b> - Clears an area outside the border. The margin is transparent </li>
+</ul>
+The box model allows us to add a border around elements, and to define space between elements. 
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>Demonstration of the box model:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+<h2>Width and Height of an Element</h2>
+<p>
+In order to set the width and height of an element correctly in all browsers, you need to know how the box model works
+</p>
+<p style="background-color: #ffffcc;"><b>Important</b>: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+This &lt;div&gt; element will have a total width of 350px: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<p>
+<style>
+  .dino {
+border:1px;
+border-left: 5px;
+padding: 10px;
+border-style: solid;
+border-color: green;
+background-color: white;
+margin: auto
+width: 100px;
+  }
+</style>
+
+Here is the calculation: <br><br>
+<div class="dino">
+320px (width) <br>
++ 20px (left + right padding) <br>
++ 10px (left + right border) <br>
++ 0px (left + right margin) <br>
+<b>= 350px</b>
+</div>
+<br>
+The total width of an element should be calculated like this: <br><br>
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin <br><br>
+
+The total height of an element should be calculated like this: <br><br>
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+</p>
+
+</body>
+</html>

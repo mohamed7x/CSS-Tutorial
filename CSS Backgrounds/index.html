@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>CSS Backgrounds</h1>
+<p>
+The CSS background properties are used to add background effects for elements.
+</p>
+
+<div style="background-color: #c5c5c5">
+&nbsp;<br>
+In these chapters, you will learn about the following CSS background properties:
+
+<ul>
+  <li><span style="color: red;">background-color</span> </li>
+  <li><span style="color: red;">background-image</span></li>
+<li><span style="color: red;">background-repeat</span></li>
+<li><span style="color: red;">background-attachment</span></li>
+<li><span style="color: red;">background-position</span> </li>
+<li><span style="color: red;">background</span> (shorthand property)</li>
+</ul>
+&nbsp;
+</div>
+<h2>CSS background-color</h2>
+
+<p>
+The <span style="color: red;">background-color</span> property specifies the background color of an element.
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>The background color of a page is set like this:</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 330px; background-color: white">
+body {
+  background-color: lightblue;
+}
+</pre>
+&nbsp;
+</div>
+<p>
+With CSS, a color is most often specified by:<br>
+<ul>
+  <li>a valid color name - like "red"</li>
+  <li>a HEX value - like "#ff0000"</li>
+  <li>an RGB value - like "rgb(255,0,0)"</li>
+</ul>
+
+Look at <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">CSS Color Values </a> for a complete list of possible color values.
+</p>
+
+<h2>Other Elements</h2>
+<p>
+You can set the background color for any HTML elements:
+</p>
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different background colors: 
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+<h2>
+Opacity / Transparency
+</h2>
+<p>
+The <span style="color: red;">opacity</span> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example2.html">Click Here</a>
+
+<p style="background-color: #ffffcc">
+<b>Note</b>: When using the <span style="color: red;">opacity</span> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.
+</p>
+
+<h2>Transparency using RGBA</h2>
+<p>
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:
+</p>
+<div>
+<div class="first" style="background: rgba(0, 128, 0, 0.1);">
+  <h1>10% opacity</h1>
+</div>
+<div class="second" style="background: rgba(0, 128, 0, 0.3);">
+  <h1>30% opacity</h1>
+</div>
+<div class="third" style="background: rgba(0, 128, 0, 0.6);">
+  <h1>60% opacity</h1>
+</div>
+<div class="4th" style="background: rgba(0, 128, 0, 1);">
+  <h1>100% opacity</h1>
+</div>
+<p>
+You learned from our <a href="https://www.w3schools.com/css/css_colors.asp">CSS Colors Chapter</a>, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an <b>alpha</b> channel (RGB<b>A</b>) - which specifies the opacity for a color.
+<br><br>
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+<br><br>
+<b>Tip</b>: You will learn more about RGBA Colors in our  <a href="https://www.w3schools.com/css/css_colors.asp">CSS Colors Chapter</a>.
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example3.html">Click Here</a>
+
+<h2>The CSS Background Color Property</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_background-color.asp">background-color</a></td>
+    <td>Sets the background color of an element</td>
+  </tr>
+</table>
+
+</body>
+</html>

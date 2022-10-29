@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <h1>CSS Height, Width and Max-width</h1>
+  <p>
+The CSS <span style="color:red;">height</span> and <span style="color:red;">width</span> properties are used to set the height and width of an element.<br><br>
+
+The CSS <span style="color:red;">max-width</span> property is used to set the maximum width of an element.
+  </p>
+<hr>
+
+
+<div>
+<style>
+div.demo {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="demo">This div element has a height of 50 pixels and a width of 100%.</div></div>
+
+<h2>CSS Setting height and width</h2>
+<p>
+The <span style="color:red;">height</span> and <span style="color:red;">width</span>  properties are used to set the height and width of an element. <br><br>
+
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+</p>
+
+<h2>CSS height and width Values</h2>
+<p>
+The height and width properties may have the following values:
+
+<ul>
+  <li> <span style="color:red;">auto</span>  - This is default. The browser calculates the height and width</li>
+  <li> <span style="color:red;">length</span>  - Defines the height/width in px, cm, etc.</li>
+  <li><span style="color:red;">%</span>  - Defines the height/width in percent of the containing block</li>
+  <li> <span style="color:red;">initial</span>  - Sets the height/width to its default value</li>
+  <li> <span style="color:red;">inherit</span>  - The height/width will be inherited from its parent value</li>
+</ul>
+</p>
+
+<h2>CSS height and width Examples</h2>
+
+<div style="background-color: powderblue; height:200px; width:50% ">
+This element has a height of 200 pixels and a width of 50%
+</div>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+Set the height and width of a &lt;div&gt; element:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example.html">Click Here</a>
+<br>
+<br>
+
+<div style="background-color: powderblue; height:100px; width:500px ">
+This element has a height of 100 pixels and a width of 500pixels
+</div>
+
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+  <h3>Example</h3>
+<p>
+Set the height and width of another &lt;div&gt; element:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+
+<p>
+<b>Note</b>: Remember that the <span style="color:red;">height</span> and <span style="color:red;">width</span> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!
+</p>
+
+<h2>Setting max-width</h2>
+<p>
+The <span style="color:red;">max-width</span> property is used to set the maximum width of an element.<br><br>
+
+The <span style="color:red;">max-width</span> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).<br><br>
+
+The problem with the &lt;div&gt; above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.<br><br>
+
+Using <span style="color:red;">max-width</span> instead, in this situation, will improve the browser's handling of small windows.<br><br>
+
+<b>Tip</b>: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
+</p>
+<style>
+div.demo1 {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+</style>
+<div class="demo1">
+This element has a height of 100 pixels and a max-width of 500 pixels.
+</div>
+
+<p>
+<b>Note</b>: If you for some reason use both the <span style="color:red;">width</span> property and the <span style="color:red;">max-width</span> property on the same element, and the value of the <span style="color:red;">width</span> property is larger than the <span style="color:red;">max-width</span> property; the <span style="color:red;">max-width</span> property will be used (and the <span style="color:red;">width</span> property will be ignored).
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<p>
+This &lt;div&gt; element has a height of 100 pixels and a max-width of 500 pixels:
+</p>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+</pre>
+&nbsp;
+</div>
+<h3>Output</h3>
+<a target="_blanck" href="Example1.html">Click Here</a>
+<h2>Try it Yourself - Examples</h2>
+<p>
+<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height">Set the height and width of elements</a> <br>
+This example demonstrates how to set the height and width of different elements.
+<br><br>
+<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent">Set the height and width of an image using percent</a><br>
+This example demonstrates how to set the height and width of an image using a percent value.
+<br><br>
+<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width">Set min-width and max-width of an element</a><br>
+This example demonstrates how to set a minimum width and a maximum width of an element using a pixel value.
+<br><br>
+<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height">Set min-height and max-height of an element</a><br>
+This example demonstrates how to set a minimum height and a maximum height of an element using a pixel value.
+</p>
+<h2>
+All CSS Dimension Properties
+</h2>
+<table>
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_height.asp">height</a></td>
+    <td>Sets the height of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_max-height.asp">max-height</a></td>
+    <td>Sets the maximum height of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp">max-width</a></td>
+    <td>Sets the maximum width of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_min-height.asp">min-height</a></td>
+    <td>Sets the minimum height of an element</td>
+  </tr>
+ <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_min-width.asp">min-width</a></td>
+    <td>Sets the minimum width of an element</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/pr_dim_width.asp">width</a></td>
+    <td>Sets the width of an element</td>
+  </tr>
+</table>
+
+</body>
+</html>

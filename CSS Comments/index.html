@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1>CSS Comments</h1>
+
+<p>
+CSS comments are not displayed in the browser, but they can help document your source code.
+</p>
+
+<h2>CSS Comments</h2>
+<p>
+Comments are used to explain the code, and may help when you edit the source code at a later date.<br><br>
+
+Comments are ignored by browsers.<br><br>
+
+A CSS comment is placed inside the <span style="color: red;">&lt;style&gt;</span> element, and starts with <span style="color: red;">/* </span> and ends with <span style="color: red;">*/</span> :
+</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+/* This is a single-line comment */
+p {
+  color: red;
+}
+</pre>
+&nbsp;
+</div>
+
+<p>You can add comments wherever you want in the code:</p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+p {
+  color: red;  /* Set text color to red */
+}
+</pre>
+&nbsp;
+</div>
+<p>Comments can also span multiple lines: </p>
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+}
+</pre>
+&nbsp;
+</div>
+
+<h2>HTML and CSS Comments</h2>
+<p>
+From the HTML tutorial, you learned that you can add comments to your HTML source by using the <!--...--> syntax.<br><br>
+
+In the following example, we use a combination of HTML and CSS comments:
+</p>
+
+
+<div style="heigth: 200px; background-color: #C5C5C5;">
+<h3>Example</h3>
+<pre style="border-left: 3px solid green; margin: auto; width: 340px; background-color: white">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {
+  color: red; /* Set text color to red */
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;My Heading&lt;/h2&gt;
+
+&lt;!-- These paragraphs will be red --&gt; 
+&lt;p&gt;Hello World!.&lt;/p&gt;
+&lt;p&gt;This paragraph is styled with
+CSS.&lt;/p&gt;
+
+&lt;p&gt;CSS comments are not shown in 
+the output.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+&nbsp;
+</div>
+
+
+
+</body>
+</html>
